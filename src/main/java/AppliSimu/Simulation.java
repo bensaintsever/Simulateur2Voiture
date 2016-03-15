@@ -6,15 +6,17 @@ import java.awt.event.ActionListener;
 import javax.swing.Timer;
 
 import DomaineVoiture.Voiture;
+import EspaceSimulation.*;
 
-public class ProtoSimu {
+public class Simulation {
 
 	public static final int dureeUneSecondeEnMilliSecondes = 1000;
 
 	public static void main(String[] args) {
 
-		final Voiture maVoiture = new Voiture (100, 0, 10);
-		IHMVoiture monTriangle = new IHMVoiture(maVoiture);
+        final Voiture maVoiture = new Voiture (100, 0, 10);
+		final Route maRoute = new Route(300, Direction.HORIZONTALE);
+		IHM monTriangle = new IHM(maVoiture,maRoute);
 		
 		Timer timerAvancer = new Timer(dureeUneSecondeEnMilliSecondes, new ActionListener() {
 			
