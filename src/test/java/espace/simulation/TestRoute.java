@@ -1,7 +1,5 @@
-package EspaceSimulation;
+package espace.simulation;
 
-import DomaineVoiture.Voiture;
-import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

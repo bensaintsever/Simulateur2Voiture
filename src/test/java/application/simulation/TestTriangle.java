@@ -1,4 +1,4 @@
-package AppliSimu;
+package application.simulation;
 
 
 import static org.junit.Assert.*;
@@ -8,10 +8,11 @@ import org.junit.Test;
 
 public class TestTriangle {
 
+
 	@Before
 	public void setUp() throws Exception {
 	}
-	
+
 	@Test
 	public void testConversionMetresPixels() {
 		
